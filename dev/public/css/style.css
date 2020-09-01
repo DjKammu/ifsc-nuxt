@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+body
+{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background: #FFFFFF;
+  color: #a5a5a5;
+}
+p
+{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight: 500;
+  color: #717171;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+ul {
+  list-style: none;
+}
+::selection
+{
+  background: #3aa5dc;
+  color: #FFFFFF;
+}
+h1{font-size: 48px;}
+h2{font-size: 36px;}
+h3{font-size: 24px;}
+h4{font-size: 18px;}
+h5{font-size: 14px;}
+h1, h2, h3, h4, h5, h6
+{
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+  line-height: 1.2;
+  color: #2e3f61;
+}
+.clear
+{
+  clear: both;
+}
+.clearfix::before, .clearfix::after
+{
+  content: "";
+  display: table;
+}
+.clearfix::after
+{
+  clear: both;
+}
+
+.header {
+  background-color: #3aa5dc!important;
+  padding: 10px 0;
+}
+.header_content
+{
+  width: 100%;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+.header_content .navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 15px;
+}
+.header_content .navbar-dark .navbar-toggler {
+    border-color: #fff;
+}
+
+.bank-lists .banks-ul {
+    list-style: none;
+}
+@media (min-width:768px) {
+  .bank-lists .banks-ul li {
+    float: left;
+    width: 50%;
+  }
+}
+
+.search_box_container
+{
+  width: 100%;
+  background: #3aa5dc;
+  box-shadow: 0px 3px 57px rgba(0,0,0,0.35);
+  z-index: 1;
+  padding: 30px;
+}
+.search_form_container
+{
+  width: 100%;
+}
+.search_form
+{
+  display: block;
+  width: 100%;
+}
+.search_form > div
+{
+  width: 100%;
+  height: 100%;
+}
+.search_form_list > li
+{
+  position: relative;
+  width: 100%;
+  cursor: pointer;    
+  padding: 20px;
+  background: #FFFFFF;
+  margin: 10px 0px;
+}
+.search_form_list > li:not(:last-child)
+{
+  border-right: solid 2px #d1d1d1;
+}
+.search_form_list > li::after
+{
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: #044668;
+  content: '';
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.search_form_list > li:hover::after
+{
+  visibility: visible;
+  opacity: 1;
+}
+.search_form_list > li span
+{
+  font-size: 15px;
+  font-weight: 500;
+  color: #6b6b6b;
+}
+.search_form_list > li i
+{
+  font-size: 10px;
+  font-weight: 500;
+  color: #a3a3a3;
+}
+.search_form_list > li > ul
+{
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background: #FFFFFF;
+  padding-left: 28px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0px 3px 25px rgba(0,0,0,0.15);
+  z-index: 1;
+}
+.search_form_list > li.active > ul
+{
+  visibility: visible;
+  opacity: 1;
+}
+
+.search_form select{
+  position: relative;
+    width: 100%;
+    cursor: pointer;
+    padding: 20px;
+    background: #FFFFFF;
+    margin: 10px 0px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #6b6b6b;
+}
+
+.search_form input{
+  position: relative;
+    width: 100%;
+    cursor: pointer;
+    padding: 20px;
+    background: #FFFFFF;
+    margin: 10px 0px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #6b6b6b;
+    border-right: solid 2px #d1d1d1;
+}
+
+.search_form option{
+  width:150px;
+    background: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+    color: #6b6b6b;
+}
+
+.search_form > select:not(:last-child) {
+    border-right: solid 2px #d1d1d1;
+}
+
+.intro
+{
+  width: 100%;
+  background: #FFFFFF;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.footer {
+  display: block;
+  width: 100%;
+  background: #3aa5dc;
+  padding: 10px 0;
+}
+.footer p, .footer p a {
+  margin-bottom: 0;
+  color: #fff;
+}
